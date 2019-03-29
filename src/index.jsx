@@ -6,7 +6,7 @@ export default (deps = [], opts = {}) => {
 	useEffect(() => {
 		const {current} = scrollHelper;
 		current.scrollIntoView(opts);
-	}, [deps, opts]);
+	}, deps);
 
 	return () => <div ref={scrollHelper} />;
 };

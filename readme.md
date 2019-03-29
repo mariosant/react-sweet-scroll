@@ -19,16 +19,34 @@ $ yarn add @mariosant/react-sweet-scroll
 You can now import the module and use it like
 
 ```javascript
-import {useAsync, useAsyncImperative} from '@mariosant/react-sweet-scroll';
+import useScroll from '@mariosant/react-sweet-scroll';
 ```
 
 ## Usage
 
-WIP
+The hook accepts an array with dependencies which work exactly like `useEffect` and a set of options, similar to `scrollIntoView`.
 
-## Development
+It returns a component, that should be placed to the point the list container should scroll to.
 
-WIP
+Consider the example below.
+
+```javascript
+import useScroll from '@mariosant/react-sweet-scroll';
+import List from './some-component';
+
+const toString = JSON.stringify;
+
+const Component = ({messages}) => {
+    const ScrollPoint = useScroll([toString(messages)]);
+
+    return (
+        <List>
+            {messages.map(...)}
+            <ScrollPoint />
+        </List>
+    )
+};
+```
 
 ## Meta
 
