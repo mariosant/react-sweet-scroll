@@ -5,6 +5,8 @@
 [![NPM version](https://img.shields.io/npm/v/@mariosant/react-sweet-scroll.svg)](https://www.npmjs.com/package/@mariosant/react-sweet-scroll)
 [![Build Status](https://travis-ci.org/mariosant/react-sweet-scroll.svg?branch=master)](https://travis-ci.org/mariosant/react-sweet-scroll)
 
+### [Check out the example at CodeSandbox](https://codesandbox.io/s/mrvk2qlqp)
+
 ## Installation
 
 Add `@mariosant/react-sweet-scroll` to your `package.json`.
