@@ -38,10 +38,8 @@ Consider the example below.
 import useScroll from '@mariosant/react-sweet-scroll';
 import List from './some-component';
 
-const toString = JSON.stringify;
-
 const Component = ({messages}) => {
-    const ScrollPoint = useScroll([toString(messages)]);
+    const ScrollPoint = useScroll([messages]);
 
     return (
         <List>
